@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Warnes&display=swap');
+ 
+#menu-desktop {display: block;}
+#menu-mobile {display: none;}
+
+h1 span {
+  color: #2D2515;
+}
+ 
+nav {
+  font-family: 'Warnes', cursive;
+  font-size:20px;
+  color: #FF3366;
+  background-color: #2D2515;
+}
+nav ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  
+  } 
+nav ul li {
+  background-color: #2D2515;
+  display:inline-block;
+  }
+nav a {
+  font-family: 'Warnes', cursive;
+  font-size:20px;
+  color:#FB7CF3;
+  line-height: 60px;
+  text-decoration:none;
+  display:block;
+  padding:10px; 
+}
+nav a:hover { 
+  background-color: #685A42; 
+}
+nav ul ul { 
+  top: 60px;  
+  position: absolute;
+  display: none;
+} 
+nav ul li:hover > ul {
+  display:inherit;
+} 
+nav ul ul li {
+  width:240px;
+  display:list-item;
+  float:none;
+  position: relative;
+}
+nav ul ul ul li {
+  left:240px;
+  position: relative;
+  top:-60px; 
+}
+nav ul ul li {
+  border: 1px solid white;
+} 
+
+body {
+background-color: #2D2515;
+font-family: sans-serif;
+max-width: 1080px; 
+margin: 0 auto; 
+float: none; 
+}
+
+h1 {
+font-family: 'Warnes', cursive;
+font-size: 50px;
+color: #FB7CF3;
+text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;
+}
+
+h2 {
+font-family: 'Warnes', cursive;
+color: #3AB195;
+border-bottom: 2px solid black;
+}
+
+h3 {
+font-weight: bold;
+color: #20A1EE;
+}
+
+h4, h5, h6 {
+color: #20A1EE;
+}
+
+p {
+color: #DDCAD9;
+}
+
+ul li {
+  color: #DDCAD9;
+  margin: 10px 0;
+}
+
+ul li::marker {
+     color: #20A1EE;
+     font-size: 1.2em;
+ }
+
+ol{
+color: #DDCAD9;
+}
+
+a {
+color: #2EC4B6;
+}
+
+img {
+max-width: 100%;
+max-height: 100%;
+}
+
+.column1 {
+color: #DDCAD9;
+float: left;
+width: 45%;
+padding-left: 30px;
+background-size:100%
+}
+
+.column2 {
+color: #DDCAD9;
+float: left;
+width: 45%;
+float: center;
+padding: 5px;
+background-size:100%
+}
+
+.row::after {
+color: #DDCAD9;
+content: "";
+clear: both;
+display: flex;
+background-size:100%
+}
+
+#banner {
+  background-image: url(images/bannersplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 421px) {
+
+#menu-desktop {display: none;}
+#menu-mobile {display: block;}
+
+#container {
+  margin: 0 auto;
+}
+
+h1 span {
+  color: #2D2515;
+}
+ 
+nav {
+  font-family: 'Warnes', cursive;
+  font-size: 100%;
+  color: #FF3366;
+  background-color: #2D2515;
+}
+nav ul {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  } 
+nav ul li {
+  width: 17%;
+  display:inline-block;
+  }
+nav a {
+  font-family: 'Warnes', cursive;
+  font-size:90%;
+  color:#FB7CF3;
+  line-height: 20px;
+  text-decoration:none;
+  display:inline-block;
+  padding:10px; 
+}
+
+img {
+width: 100%;
+max-width: 250px;
+}
+
+.column1,
+.column2{
+  width: 95%;
+            }
+        }
+}
